@@ -159,7 +159,8 @@ Requirements
 Python 3.4.0
 Ubuntu 20.04 LTS
 Fabric 3 version 1.14.post1
-Use of PEP 8 style
+Use of PEP 8 style![aribnb_diagram_0](https://github.com/Baajike/AirBnB_clone_v2/assets/115042371/0c099dc0-1232-46c6-a2a9-bc16391fcc15)
+
 README.md file at the root of the project
 Detailed documentation for functions and scripts
 Bash scripts must pass Shellcheck
@@ -183,3 +184,4 @@ Calls do_pack() and do_deploy(archive_path) functions
 Keep it clean script
 
 Deletes out-of-date archives in the versions and /data/web_static/releases folders
+
