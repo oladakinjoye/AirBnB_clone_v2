@@ -140,3 +140,48 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 (hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
 ```
 <br>
+
+UPDATE
+
+AirBnB Clone Deployment Project
+
+Background
+This project focuses on deploying the web_static work using Fabric, a Python library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks. The deployment involves setting up web servers, creating a .tgz archive, distributing the archive to web servers, and more.
+
+Project Objectives
+Understand Fabric and its functionalities
+Deploy code easily to a server
+Create a .tgz archive using Fabric
+Distribute archives to web servers
+Manage Nginx configuration for serving static content
+Perform tasks using Python and Bash scripts
+Requirements
+Python 3.4.0
+Ubuntu 20.04 LTS
+Fabric 3 version 1.14.post1
+Use of PEP 8 style![aribnb_diagram_0](https://github.com/Baajike/AirBnB_clone_v2/assets/115042371/0c099dc0-1232-46c6-a2a9-bc16391fcc15)
+
+README.md file at the root of the project
+Detailed documentation for functions and scripts
+Bash scripts must pass Shellcheck
+Fabric scripts for deployment tasks
+Tasks
+Prepare your web servers script
+
+Sets up web servers for web_static deployment
+Installs Nginx, creates folders, sets permissions, and updates Nginx configuration
+Compress before sending script
+
+Generates a .tgz archive from the web_static folder of the AirBnB Clone repo
+Deploy archive script
+
+Distributes an archive to web servers
+Uploads, uncompresses, and creates links for the archive
+Full deployment script
+
+Creates and distributes an archive to web servers
+Calls do_pack() and do_deploy(archive_path) functions
+Keep it clean script
+
+Deletes out-of-date archives in the versions and /data/web_static/releases folders
+
