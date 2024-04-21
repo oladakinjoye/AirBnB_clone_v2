@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A script that starts a Flask web application"""
+""" starts a Flask web application"""
 from flask import Flask
 from flask import render_template
 
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def display_hello():
-    """Prints hello hbnb"""
+    """Prints Hello hbnb"""
     return "Hello HBNB!"
 
 
