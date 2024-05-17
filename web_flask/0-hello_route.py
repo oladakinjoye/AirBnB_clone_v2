@@ -4,14 +4,14 @@ A script that starts a Flask web application
 web application will listening on 0.0.0.0, port 5000 
 """
 
-from flask import Flask, render_template
+from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def hello():
-    """returns a given string!"""
-    return render_template("10-hbnb_filters.html")
+@app.route('/airbnb-onepage/', strict_slashes=False)
+def hello_hbnb():
+    """Display Hello HBNB!"""
+    return "Hello HBNB!"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='5000', debug=None)
